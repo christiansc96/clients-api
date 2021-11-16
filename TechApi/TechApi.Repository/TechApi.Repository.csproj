@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TechApi.Database\TechApi.Database.csproj" />
+    <ProjectReference Include="..\TechApi.DTO\TechApi.DTO.csproj" />
+  </ItemGroup>
+
+</Project>
