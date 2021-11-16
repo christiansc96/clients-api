@@ -1,2 +1,9 @@
 ﻿TechApi/.vs
 TechApi/TechApi/obj
+TechApi/TechApi/bin
+TechApi/TechApi.Database/bin
+TechApi/TechApi.Database/obj
+TechApi/TechApi.DTO/bin
+TechApi/TechApi.DTO/obj
+TechApi/TechApi.Repository/bin
+TechApi/TechApi.Repository/obj

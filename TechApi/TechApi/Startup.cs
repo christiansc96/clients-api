@@ -4,6 +4,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using TechApi.Database.Context;
+using TechApi.Repository.Interfaces;
+using TechApi.Repository.Repository;
 
 namespace TechApi
 {
@@ -19,6 +22,8 @@ namespace TechApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<TechApiContext>();
+            services.AddScoped<IClientRepository, ClientRepository>();
             services.AddSwaggerGen(service =>
             {
                 service.SwaggerDoc("v1", new OpenApiInfo { Title = "TechApi", Version = "v1" });
